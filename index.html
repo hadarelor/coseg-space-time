@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Co-segmentation for Space-Time Co-located Collections</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body>
+
+<div class="title">
+	<center>Co-segmentation for Space-Time Co-located Collections</center>
+</div> 
+<div>
+	<table align="center">
+	<tr>
+		<td align='center' class='author'><a href='http://www.cs.tau.ac.il/~averbuch1/' target='new' onClick="stc(this, 1)">Hadar Averbuch-Elor</a></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='author'><a href='http://johanneskopf.de/' target='new' onClick="stc(this, 3)">Johannes Kopf</a></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='author'><a href='http://ie.technion.ac.il/~tamir.hazan/' target='new' onClick="stc(this, 3)">Tamir Hazan</a></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='author'><a href='http://www.cs.tau.ac.il/~dcor/' target='new' onClick="stc(this, 2)">Daniel Cohen-Or</a></td>
+
+	</tr>
+	<tr>
+		<td align='center' class='affiliation'>Tel Aviv University</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='affiliation'>Facebook</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='affiliation'>Technion</td>		
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='affiliation'>Tel Aviv University</td>
+
+	</tr>
+	</table>
+</div>
+
+<div class="conference">
+	Appearing in <a href="http://link.springer.com/article/10.1007%2Fs00371-017-1467-5">The Visual Computer 2018</a>
+</div> 
+
+
+	   <div class="teaser">
+            <tr>
+                <img alt="Input 1" src="teaser.png" height="124"/>
+            </tr>
+			<!--<p>
+				Figure: An example of a space-time co-located image collection, where various photographers captured the Duchess of Cambridge in her wedding ceremony.
+			</p>-->
+    </div> 
+<p>
+We present a co-segmentation technique for space-time co-located image collections. These prevalent collections capture various dynamic events, usually by multiple photographers, and may contain multiple co-occurring objects which are not necessarily part of the intended foreground object, resulting in ambiguities for traditional co-segmentation techniques. 
+Thus, to disambiguate what the common foreground object is, we introduce a weakly-supervised technique, where we assume only a small seed, given in the form of a single segmented image.
+We take a distributed approach, where local belief models are propagated and reinforced with similar images.  Our technique progressively expands the foreground and background belief models across the entire collection. The technique exploits the power of the entire set of image without building a global model, and thus successfully overcomes large variability in appearance of the common foreground object. We demonstrate that our method outperforms previous co-segmentation techniques on challenging space-time co-located collections, including dense benchmark datasets which were adapted for our novel problem setting.    
+</p>
+
+
+<!-- <h2>Results</h2> -->
+
+
+<h2>Resources</h2>
+<a href="coseg_averbuchelor2018.pdf">Paper</a> (PDF)<br />
+<a href="supplementary_material.pdf">Supplementary Material</a> (PDF)<br />
+<a href="code.zip">Matlab code</a> <br />
+<a href="datasets.zip">Datasets</a> <br />
+<a href="http://cs.tau.ac.il/~averbuch1/coseg/Results/index.html">Results</a> <br />
+<!--  <p>
+<a href="wcseg.pdf">Paper</a> (PDF, 7MB)<br />
+<!-- <a href="http://dx.doi.org/10.1145/2461912.2461924">DOI</a> 
+<a href="wcseg.zip">MATLAB Code</a><br />
+<a href="data.zip">Datasets</a> (point clouds and incremental views in obj and ply formats)<br />
+<a href="results.zip">Results</a> (segmentation results in off and ply formats)<br />
+</p> -->
+
+<h2>BibTex Reference</h2>
+<pre>@article{elor2017coseg,
+  title={Co-segmentation for Space-Time Co-located Collections},
+  author={Averbuch-Elor, Hadar and Kopf, Johannes and Hazan, Tamir and Cohen-Or, Daniel},
+  journal={arXiv preprint arXiv:1701.08931},
+  year={2017}
+}
+</pre>
+
+<!--
+<h2>Presentation slides</h2>
+<p>
+To appear later...
+</p>
+-->
+
+<!--<h2>Acknowledgements</h2>
+<p>
+We thank Pieter Peers for providing helpful discussions in an early stage of this project. We also thank Ronit Reitshtein for helping in assembling the datasets. This work is supported by the Israel Science Foundation.
+</p>-->
+
+<p>
+Last update to the page: February 14, 2017.<br />
+</p>
+
+</body>
+</html>
